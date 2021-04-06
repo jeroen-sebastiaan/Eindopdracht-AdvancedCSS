@@ -1,0 +1,81 @@
+@import"_reset.scss";
+
+body{
+    background-color: #c3cfe2;
+    overflow-x: hidden;
+}
+
+li{
+    width: 330px;
+    height: fit-content;
+}
+
+span{
+    margin: 10px 20px 10px 5px;
+}
+
+.social-media{
+    list-style-type: none;
+    position: absolute;
+    top: 350px;
+    right: -300px;
+    margin: 0;
+    padding: 0;
+    display: inline-block; 
+    color: white;
+    &__text{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-decoration: underline;
+        color: white;
+    }
+}
+
+@keyframes slide-in{
+    from{transform: translateX(0px);}
+    to{transform: translateX(-280px);}
+}
+
+li:hover{
+    animation: slide-in 1000ms ease 250ms forwards;
+}
+
+.social-media__blog {
+    background-color: #e17b77; 
+}
+
+.fas fa-laptop-code::before {
+    content: "\f5fc";
+}
+
+.social-media__facebook {
+background-color: #3b5998;
+}
+
+.fab fa-facebook-f::before {
+content: "\f39e";
+}
+
+.social-media__twitter {
+background-color: #00aced;
+}
+
+.fab fa-twitter::before {
+content: "\f099";
+}
+
+.social-media__github {
+background-color: #333;
+}
+
+.fab fa-github::before {
+content: "\f09b";
+}
+
+.social-media__linkedin {
+background-color: #007bb6;
+}
+
+.fab fa-linkedin::before {
+content: "\f0e1";
+}
